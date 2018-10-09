@@ -1,22 +1,24 @@
-package com.cl.models;
+package com.cl.packapp.backadvisor.model;
 
-import java.util.Set;
+import java.util.List;
 
 public class Advisor {
 	
 	private String id;
 	private String firstName;
     private String lastName;
-    private Set<Specialty> specialties;
+    private List<String> specialties;
     
+    public Advisor() {
+    	
+    }
     
-    
-    public Advisor(String id, String firstName, String lastName, Set<Specialty> specialties) {
+    public Advisor(String id, String firstName, String lastName, List<String> specialties) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.setSpecialties(specialties);
+		this.specialties = specialties;
 	}
 
 	public String getFirstName() {
@@ -43,11 +45,11 @@ public class Advisor {
 		this.id = id;
 	}
 
-	public Set<Specialty> getSpecialties() {
+	public List<String> getSpecialties() {
 		return specialties;
 	}
 
-	public void setSpecialties(Set<Specialty> specialties) {
+	public void setSpecialties(List<String> specialties) {
 		this.specialties = specialties;
 	}
 
