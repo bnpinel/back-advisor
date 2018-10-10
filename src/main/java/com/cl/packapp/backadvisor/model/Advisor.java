@@ -7,13 +7,13 @@ public class Advisor {
 	private String id;
 	private String firstName;
     private String lastName;
-    private List<String> specialties;
+    private List<Specialty> specialties;
     
     public Advisor() {
     	
     }
     
-    public Advisor(String id, String firstName, String lastName, List<String> specialties) {
+    public Advisor(String id, String firstName, String lastName, List<Specialty> specialties) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -45,11 +45,11 @@ public class Advisor {
 		this.id = id;
 	}
 
-	public List<String> getSpecialties() {
+	public List<Specialty> getSpecialties() {
 		return specialties;
 	}
 
-	public void setSpecialties(List<String> specialties) {
+	public void setSpecialties(List<Specialty> specialties) {
 		this.specialties = specialties;
 	}
 
