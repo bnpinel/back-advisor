@@ -33,7 +33,7 @@ public class AdvisorController {
 		
 		advisor = repository.save(advisor);
 		
-		System.out.println("---- Card " + advisor.getId() + " added");
+		System.out.println("---- Advisor " + advisor.getId() + " added");
 		
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/advisor/{id}").buildAndExpand(advisor.getId()).toUri());
