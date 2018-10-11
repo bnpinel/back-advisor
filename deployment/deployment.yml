@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: back-advisor
-        image: registry.hackathon-container.com/packapp04/back-advisor:2.0
+        image: registry.hackathon-container.com/packapp04/back-advisor:2.2
         ports:
         - containerPort: 9090
       imagePullSecrets:
